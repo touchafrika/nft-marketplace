@@ -34,7 +34,7 @@ yarn-error.log*
 .vercel
 
 node_modules
-.env
+# .env
 coverage
 coverage.json
 typechain
@@ -44,4 +44,4 @@ cache
 artifacts
 
 #Gitpod
-.gitpod.yml
+# .gitpod.yml
