@@ -2,15 +2,18 @@
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract NFT is ERC721URIStorage {
-    using Counters for counters.Counter;
-    Counters.Counter private _tokenIds;
-    address contractAddress;
+contract NFTMarket is ReentrancyGuard {
+    using Counters for Counters.Counter;
+    Counters.Counter private _itemIds;
+    Counters.Counter private _itemsSold;
 
-    function NFT(address _contractAddress) public{
-        
+    address payable owner;
+    uint listingPrice = 0.025 ether;
+
+    constructor() {
+        owner = payable(msg.sender);
     }
 }

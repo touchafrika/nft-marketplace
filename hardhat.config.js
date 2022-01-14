@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
-const dotenv = required("dotenv");
+const dotenv = require("dotenv");
 dotenv.config();
 
 module.exports = {
