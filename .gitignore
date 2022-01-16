@@ -46,3 +46,12 @@ artifacts
 #Gitpod
 # .gitpod.yml
 .dccache
+
+# vs-code 
+.vscode
+
+# nextjs
+.next
+
+# configuration
+config.js
